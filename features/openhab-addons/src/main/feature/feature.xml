@@ -66,6 +66,13 @@
     <bundle start-level="80">mvn:org.openhab.action/org.openhab.action.pushover/${project.version}</bundle>
     <configfile finalname="${openhab.conf}/services/pushover.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/pushover</configfile>
   </feature>
+  
+  <feature name="openhab-action-pushsafer" description="Pushsafer Action" version="${project.version}">
+    <feature>openhab-runtime-base</feature>
+    <feature>openhab-runtime-compat1x</feature>
+    <bundle start-level="80">mvn:org.openhab.action/org.openhab.action.pushsafer/${project.version}</bundle>
+    <configfile finalname="${openhab.conf}/services/pushsafer.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/pushsafer</configfile>
+  </feature>  
 
   <feature name="openhab-action-telegram" description="Telegram Action" version="${project.version}">
     <feature>openhab-runtime-base</feature>
@@ -270,6 +277,13 @@
     <configfile finalname="${openhab.conf}/services/culintertechno.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/culintertechno</configfile>
   </feature>
 
+  <feature name="openhab-binding-ipx800" description="IPX800 Binding" version="${project.version}">
+    <feature>openhab-runtime-base</feature>
+    <feature>openhab-runtime-compat1x</feature>
+    <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.ipx800/${project.version}</bundle>
+    <configfile finalname="${openhab.conf}/services/ipx800.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/ipx800</configfile>
+  </feature>
+
   <feature name="openhab-binding-irtrans" description="IRTrans Binding" version="${project.version}">
     <feature>openhab-runtime-base</feature>
     <feature>openhab-runtime-compat1x</feature>
@@ -444,6 +458,14 @@
     <feature>openhab-runtime-compat1x</feature>
     <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.owserver/${project.version}</bundle>
     <configfile finalname="${openhab.conf}/services/owserver.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/owserver</configfile>
+  </feature>
+
+  <feature name="openhab-binding-plugwise" description="Plugwise Binding" version="${project.version}">
+    <feature>openhab-runtime-base</feature>
+    <feature>openhab-runtime-compat1x</feature>
+    <feature>openhab-transport-serial</feature>
+    <bundle start-level="80">mvn:org.openhab.binding/org.openhab.binding.plugwise/${project.version}</bundle>
+    <configfile finalname="${openhab.conf}/services/plugwise.cfg" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/plugwise</configfile>
   </feature>
 
   <feature name="openhab-binding-powermax" description="Visonic PowerMax Binding" version="${project.version}">
